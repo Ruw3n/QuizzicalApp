@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let's get Quizzical!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka">
+
+</head>
+<body onload="initMainPage()">
+<script src="func.js"></script>
+<center><img src="theme.png" width="340" alt="https://images.huffingtonpost.com/2015-11-27-1448621966-2272308-PunnyandFunnyNamesforCats.jpg"></center>
+<h1 id="quizzHeader">Let's get Quizzical!</h1>
+<p id="groupname"></p>
+<div class="answerButton">
+    <input type="button" value="A" id="a" onclick="selectAnswer('a')">
+    <input type="button" value="B" id="b" onclick="selectAnswer('b')">
+    <br>
+    <input type="button" value="C" id="c" onclick="selectAnswer('c')">
+    <input type="button" value="D" id="d" onclick="selectAnswer('d')">
+    <br>
+</div>
+<br>
+<br>
+<div class="answerText">
+    <input type="text" placeholder="Antwort..." id="textAnswer">
+    <br>
+    <input type="button" id="ok" value="OK" onclick="submitAnswer()">
+
+</div>
+</body>
+</html>
